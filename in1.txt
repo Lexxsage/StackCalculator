@@ -1,0 +1,29 @@
+define a  1
+define b  -2
+define c 1
+push a
+
+# calculate -b
+push 0.0
+push b
+-
+# calculate discr
+push b
+push b
+*
+# calculate 4 * a * c
+push a
+push c
+push 4
+*
+*
+-
+sqrt
+
+#calculate -b + sqrt(D)
++
+push 0.5
+*
+
+/
+print
